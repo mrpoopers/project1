@@ -1,0 +1,113 @@
+{
+        "Title": "Isolation",
+        "Credits": "Created by Richie Nimnual (rnimnual@ucsc.edu).",
+        "InitialLocation": "EntryDock",
+        "Locations": {
+        "EntryDock": {
+            "Body": "The docking bay creaks beneath your feet. Saltwater drips from the ceiling. You're here, alone, again.",
+            "Choices": [
+            {
+                "Text": "Hallway",
+                "Target": "Hallway"
+            }
+            ]
+        },
+        "Hallway": {
+            "Body": "Dim lights flicker overhead. The walls, once sterile white, are stained and warped. The silence is almost too heavy.",
+            "Choices": [
+            {
+                "Text": "Observation Deck",
+                "Target": "ObservationDeck"
+            },
+            {
+                "Text": "Control Room",
+                "Target": "ControlRoom"
+            },
+            {
+                "Text": "Back",
+                "Target": "EntryDock"
+            }
+            ]
+        },
+        "ObservationDeck": {
+            "Body": "A massive glass pane overlooks the abyss. Dark waters press against it. Something stirs in the deep.",
+            "Choices": [
+            {
+                "Text": "Flooded Tunnel",
+                "Target": "FloodedTunnel"
+            },
+            {
+                "Text": "Back",
+                "Target": "Hallway"
+            }
+            ]
+        },
+        "FloodedTunnel": {
+            "Body": "Rusty railings line a tunnel half-swallowed by seawater. You can't see the bottom. A chill runs down your spine.",
+            "Choices": [
+            {
+                "Text": "the quarantine chamber",
+                "Target": "QuarantineChamber",
+                "Item": "lab key"
+            },
+            {
+                "Text": "Back",
+                "Target": "ObservationDeck"
+            }
+            ]
+        },
+        "QuarantineChamber": {
+            "Body": "Sterile. Cold. The air is still, unnaturally so. Something unseen lingers in the corners of the room."
+        },
+        "ControlRoom": {
+            "Body": "Blinking monitors scatter distorted footage. An alarm light pulses. You feel like you're being recorded.",
+            "Choices": [
+            {
+                "Text": "Break Room",
+                "Target": "BreakRoom"
+            },
+            {
+                "Text": "Research Lab",
+                "Target": "ResearchLab"
+            },
+            {
+                "Text": "Back",
+                "Target": "Hallway"
+            }
+            ]
+        },
+        "BreakRoom": {
+            "Body": "A dusty couch faces a silent radio. Old coffee cups sit untouched. You swear you hear static, faint and whispering.",
+            "Interactive": "Radio",
+            "Choices": [
+            {
+                "Text": "Back",
+                "Target": "ControlRoom"
+            }
+            ]
+        },
+        "ResearchLab": {
+            "Body": "The lab is in disarray, papers scattered, drawers pulled open. On a metal table, a keycard glints under a flickering light.",
+            "Item": "lab key",
+            "Choices": [
+            {
+                "Text": "Storage Closet",
+                "Target": "StorageCloset"
+            },
+            {
+                "Text": "Back",
+                "Target": "ControlRoom"
+            }
+            ]
+        },
+        "StorageCloset": {
+            "Body": "A cramped space with shelves of bleach and old tools. The scent is sharp, stinging your nose. Nothing else seems useful.",
+            "Choices": [
+            {
+                "Text": "Back",
+                "Target": "ResearchLab"
+            }
+            ]
+        }
+        }
+    }
